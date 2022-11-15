@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* FUENTES */
+
+h1{
+    font-size: 2.4em;
+}
+
+h2{
+    margin-top: 20px;
+    text-align: center;
+    color: blue;
+}
+
+h3{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+p{
+    font-size: 1.5em;
+}
+
+/*ENCABEZADO*/
+
+header{
+    background-color: red;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: red;
+    color: whitesmoke;
+    text-align: center;
+    height: 76px;
+    padding-top: 5px;
+}
+
+.menu a{
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin-left: 250px;
+    margin-top: 20px;
+    text-decoration: overline;
+    padding-bottom: 10px;
+}
+
+/*SECION*/
+
+.titular{
+    height: 420px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/imagenes/deportes/jamesr.jpg);
+    background-size: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
+}
+
+.titulo{
+    color: whitesmoke;
+    padding-top: 260px;
+    padding-left: 25px;
+    font-size: 3em;
+}
+
+sub{
+    padding-left: 25px;
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+.noticia-1-2 ul{
+    display: flex;
+}
+
+.noticia-1-2 li{
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.autogol{
+    width: 500px;
+    margin-right: 10px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+}
+
+.nairo{
+    width: 500px;
+    height: 255px;
+    margin-right: 25px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+    
+}
+
+.noticia-3{
+    color: whitesmoke;
+    padding: 95px;
+    height: 400px;
+    width: 700px;
+    margin-left: 330px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagenes//deportes/accidente.jpeg);
+    background-size: cover;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+}
+
+.titulo-3{
+    padding-top: 180px;
+    
+}
+
+.titular:hover, .nairo:hover, .autogol:hover, .noticia-3:hover{
+    filter: opacity(.5);
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+footer{
+    border-top: 3px solid red;
+    margin: 10 0 0 20px;
+    padding: 0 0 0 20px;
+}
+
+footer li{
+    color: black;
+    font-size: 1.2em;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*PARA MOVIL*/
+
+@media screen and (max-width: 870px) {
+    /* FUENTES */
+
+    h1{font-size: 1.4em;}
+
+    h3{
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    p{
+        font-size: 1em;
+        margin-right: 20px;
+    }
+    
+    /*ENCABEZADO*/
+
+    header{
+        background-color: red;
+        height: 240px;
+    }
+
+    .menu{
+        display: flex;
+        background: red;
+        color: whitesmoke;
+        text-align: center;
+        height: 76px;
+        padding-top: 20px;
+    }
+
+    .menu a{
+        color: whitesmoke;
+        font-size: 1.2em;
+        margin-right: 240px;
+        margin-top: 20px;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
+    /*SECION*/
+
+    .titular{
+        height: 450px;
+        width: 100%;
+        margin-bottom: 30px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url(/imagenes/Responsive/deportes/jamesr.jpg);
+        background-size: cover;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
+    }
+
+    .titulo{
+        color: whitesmoke;
+        padding-top: 300px;
+        padding-left: 25px;
+        font-size: 1.5em;
+    }
+
+    sub{
+        padding-left: 25px;
+        color: whitesmoke;
+        font-size: 0.8em;
+        
+    }
+
+    .noticia-1-2 ul{
+        display: block;
+    }
+    
+    .noticia-1-2 li{
+        padding: 20px;
+        margin-left: 10px;
+        list-style: none;
+    }
+    
+    .autogol{
+        width: 300px;
+        height: 380px;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+    }
+    
+    .nairo{
+        width: 300px;
+        height: 380px;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+        
+    }
+
+    .noticia-3{
+        color: whitesmoke;
+        padding-right: 280px;
+        padding: 20px;
+        margin: 30px;
+        width: 300px;
+        height: 380px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(/imagenes/Responsive/deportes/accidente.jpeg);
+        background-size: cover;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 4);
+    }
+
+    .titular:hover, .noticia-1:hover, .noticia-2:hover, .noticia-3:hover{
+        filter: opacity(.5);
+        cursor: pointer;
+    }
+
+    .titulo-3{
+        margin-left: 30px;
+        margin-top: 50px;    
+    }
+
+    .sub1{
+        padding-right: 15px;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        border-top: 3px solid red;
+        margin: 10 0 0 20px;
+        padding: 0 0 0 20px;
+        text-align: center;
+    }
+
+    footer li{
+        color: black;
+        font-size: 1.2em;
+        display: flex;
+        padding: 10px;
+        margin-left: 115px;
+        cursor: pointer;
+    }
+
+
+}
